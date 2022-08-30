@@ -8,8 +8,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Rick &amp; Morty
-          <span className="bg-primary text-light p-1 rounded-pill">WiKi</span>
+          Rick &amp; Morty API
         </Link>
 
         <button
@@ -25,13 +24,10 @@ const Navbar = () => {
         <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
             <NavLink className="nav-link" to="/">
-              Characters
+              Home
             </NavLink>
-            <NavLink className="nav-link" to="/episode">
-              Episodes
-            </NavLink>
-            <NavLink className="nav-link" to="/location">
-              Location
+            <NavLink className="nav-link" to="#">
+              About
             </NavLink>
           </div>
         </div>
