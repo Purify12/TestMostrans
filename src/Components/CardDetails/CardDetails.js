@@ -67,6 +67,16 @@ const CardDetails = () => {
                 </div>
               </div>
               </p>
+              <p className="card-text ">
+              <div className="row">
+                <div className="col-md-5 bg-warning bg-opacity-50 fw-bold text-dark">
+                  <p className="card-text">location</p>
+                </div>
+                <div className="col-md-7 bg-warning text-white">
+                  <p className="card-text fs-6 fw-bold"></p>
+                </div>
+              </div>
+              </p>
             </div>
             <p className="px-2">
               Location
