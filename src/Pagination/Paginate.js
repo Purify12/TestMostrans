@@ -21,40 +21,4 @@ const Pagination = ({ info }) => {
   );
 };
 
-/**
-  const Pagination = ({ pageNumber, setPageNumber, info }) => {
-    const prev = () => {
-      if (pageNumber > 1) {
-        setPageNumber(pageNumber - 1);
-      }
-    };
-    const next = () => {
-      if (pageNumber !== info.pages) {
-        setPageNumber(pageNumber + 1);
-      }
-    };
-
-    return (
-      <div className="d-flex justify-content-center gap-5">
-        <button
-          disabled={`${pageNumber <= 1 ? "disabled" : ""}`}
-          className={`btn btn-primary opacity-${pageNumber <= 1 ? "25" : "75"}`}
-          onClick={prev}
-        >
-          Prev
-        </button>
-        <button
-          disabled={`${pageNumber >= info.pages ? "disabled" : ""}`}
-          className={`btn btn-primary opacity-${
-            pageNumber >= info.pages ? "25" : "75"
-          }`}
-          onClick={next}
-        >
-          Next
-        </button>
-      </div>
-    );
-  };
-
-*/
 export default Pagination;

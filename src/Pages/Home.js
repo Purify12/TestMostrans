@@ -47,7 +47,7 @@ function Home() {
       </div>
       <div className="container">
         <div
-          className="col-md-12 offset-md-3  text-center my-4 "
+          className="col-md-12   text-center my-4 "
           data-bs-outline="false"
         >
           {info && (
