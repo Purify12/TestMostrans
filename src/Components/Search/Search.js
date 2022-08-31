@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from "react";
+import { useGlobalContext } from "../../context";
 
-function Search() {
+const Search = ({ setSearch }) => {
+  const { setPageNumber } = useGlobalContext();
+  const [searchText, setSearchText] = useState("");
+  const searchHandler = (e) => {
+    e.preventDefault();
+    setPageNumber(1);
+    setSearch(searchText);
+  };
   return (
-    <div>
-        <form className="row g-3 " >
+    <form className="row g-3 " onSubmit={(e) => searchHandler(e)}>
       <div className="col-md-4 offset-md-4">
         <input
           type="text"
@@ -11,7 +18,8 @@ function Search() {
           autoComplete="off"
           className="form-control custom-shadow"
           placeholder="Search..."
-          
+          onChange={(e) => setSearchText(e.target.value)}
+          value={searchText}
         />
       </div>
       <div className="col-md-4">
@@ -20,8 +28,7 @@ function Search() {
         </button>
       </div>
     </form>
-    </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;
