@@ -81,7 +81,7 @@ const CardDetails = () => {
             <p className="px-2">
               Location
 
-              <form className="row" >
+              <form className="row" link="#">
               <div className="col-md-6 ">
                 <input
                   type="text"
